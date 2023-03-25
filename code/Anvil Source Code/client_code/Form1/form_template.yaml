@@ -1,0 +1,99 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: 'theme:Black', border: '',
+    visible: true, role: null, html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Manual, font_size: null,
+      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+      bold: false, group_name: radioGroup1, underline: false}
+    name: Manual
+    layout_properties: {grid_position: 'NJVCTR,WYSBIX'}
+    event_bindings: {clicked: Manual_clicked}
+  - type: RadioButton
+    properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+      enabled: true, foreground: '', value: '', visible: true, text: Automatic, font_size: null,
+      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+      bold: false, group_name: radioGroup1, underline: false}
+    name: Automatic
+    layout_properties: {grid_position: 'FOSOBT,DRHVYM'}
+    event_bindings: {clicked: Automatic_clicked}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Enter Humidity Threshold,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {grid_position: 'KFITPW,XXCWKJ'}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Temp Low,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {grid_position: 'WTEVDJ,DRFOEB'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Temp Medium,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties: {grid_position: 'WTEVDJ,DSRCHK'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Temp High,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {grid_position: 'WTEVDJ,JTNPXC'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Update Thresholds, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: button_1
+    layout_properties: {grid_position: 'MTWAEC,DEUPPN'}
+    event_bindings: {click: button_1_click}
+  - type: RichText
+    properties: {}
+    name: rich_text_6
+    layout_properties: {grid_position: 'GDZBOX,LLPCQY'}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: '', font: '', spacing_above: small,
+      spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_7
+    layout_properties: {grid_position: 'TJMZZI,PKLXIP'}
+    components: []
+  - type: RichText
+    properties: {}
+    name: rich_text_9
+    layout_properties: {grid_position: 'HXPAFN,VSUEQW'}
+  - type: RichText
+    properties: {}
+    name: rich_text_8
+    layout_properties: {grid_position: 'TCWMXC,GEQVQY'}
+  - type: RichText
+    properties: {}
+    name: rich_text_10
+    layout_properties: {grid_position: 'IBLEOW,ECPBTP'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Update Data, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'AZCCRF,ZARSXW'}
+    event_bindings: {click: button_2_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

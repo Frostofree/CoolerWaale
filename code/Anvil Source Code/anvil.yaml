@@ -1,0 +1,26 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+startup: {type: form, module: SetUp}
+package_name: CoolerWaale
+allow_embedding: false
+name: CoolerWaale
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {}
+startup_form: Form1
+native_deps: {head_html: ''}
+db_schema:
+  users:
+    title: Users
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {width: 100}
+      type: bool
+renamed: true
