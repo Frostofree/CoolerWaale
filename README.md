@@ -3,8 +3,8 @@
 **Team Members :**
 
 - Gaurav Bansal (2021101022)
-  - Ashmit Chamoli (2021101114)
-    - Jai Bhatnagar (2021111029)
+- Ashmit Chamoli (2021101114)
+- Jai Bhatnagar (2021111029)
 - Siddharth Mangipudi (2021101060)
 
 **Project Idea :**
@@ -40,4 +40,4 @@ All of the above would come with a feedback mechanism via a website, where one c
 - HC-SR501 PIR Motion Sensor
   - I2C Module
     - MQ2 smoke detector module
-IOT BASED SMART WATER COOLER 3
+
